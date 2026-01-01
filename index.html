@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Srisoft Solutions</title>
+  <meta name="description" content="Srisoft Solutions — Educational & Business Software Solutions. ICT Quiz App for G.C.E. O/L ICT students." />
+  <style>
+    :root{
+      --bg1:#0b2a63;
+      --bg2:#0f4aa8;
+      --card:#0b1630cc;
+      --text:#eef3ff;
+      --muted:#b8c7ff;
+      --accent:#f6c247; /* gold */
+      --line:rgba(255,255,255,.12);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      background: radial-gradient(1200px 600px at 20% 10%, rgba(246,194,71,.25), transparent 60%),
+                  radial-gradient(900px 500px at 90% 40%, rgba(173,216,255,.22), transparent 55%),
+                  linear-gradient(135deg, var(--bg1), var(--bg2));
+      min-height:100vh;
+    }
+    .wrap{max-width:1100px; margin:0 auto; padding:22px 18px 48px}
+    header{
+      display:flex; align-items:center; justify-content:space-between; gap:14px;
+      padding:10px 0 22px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:.2px;
+      font-size:20px;
+    }
+    .dot{width:10px; height:10px; border-radius:999px; background:var(--accent); box-shadow:0 0 18px rgba(246,194,71,.55)}
+    nav a{
+      color:var(--muted); text-decoration:none; margin-left:14px; font-weight:600;
+      padding:10px 10px; border-radius:12px;
+    }
+    nav a:hover{background:rgba(255,255,255,.06); color:var(--text)}
+    .hero{
+      display:grid; grid-template-columns: 1.1fr .9fr; gap:22px;
+      align-items:stretch;
+    }
+    @media (max-width: 900px){ .hero{grid-template-columns:1fr} nav{display:flex; flex-wrap:wrap; justify-content:flex-end} }
+    .card{
+      background: linear-gradient(180deg, rgba(11,22,48,.88), rgba(11,22,48,.62));
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:22px;
+      box-shadow: 0 18px 50px rgba(0,0,0,.28);
+      backdrop-filter: blur(10px);
+    }
+    h1{margin:0 0 10px; font-size:44px; line-height:1.1}
+    .tag{color:var(--muted); font-size:16px; margin-bottom:18px}
+    .pill{
+      display:inline-flex; align-items:center; gap:10px;
+      background:rgba(255,255,255,.08);
+      border:1px solid var(--line);
+      border-radius:999px;
+      padding:10px 14px;
+      color:var(--muted);
+      font-weight:700;
+      margin-bottom:14px;
+    }
+    .pill b{color:var(--accent)}
+    .ctaRow{display:flex; flex-wrap:wrap; gap:12px; margin-top:14px}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:12px 16px; border-radius:14px; font-weight:800;
+      text-decoration:none; border:1px solid transparent;
+      transition: transform .08s ease, filter .15s ease;
+    }
+    .btn:active{transform: translateY(1px)}
+    .btnPrimary{
+      background: linear-gradient(180deg, #ffd36a, #f6c247);
+      color:#1a1a1a;
+      box-shadow: 0 12px 30px rgba(246,194,71,.25);
+    }
+    .btnGhost{
+      background: rgba(255,255,255,.06);
+      border-color: var(--line);
+      color: var(--text);
+    }
+    .btn:hover{filter:brightness(1.05)}
+    .shots{
+      display:flex; gap:12px; justify-content:center; align-items:center; height:100%;
+    }
+    .shot{
+      width:48%;
+      border-radius:18px;
+      border:1px solid var(--line);
+      overflow:hidden;
+      transform: rotate(-4deg);
+      box-shadow: 0 18px 45px rgba(0,0,0,.35);
+      background:#0b1630;
+    }
+    .shot:nth-child(2){
+      transform: rotate(4deg);
+      margin-top:14px;
+    }
+    .shot img{width:100%; height:auto; display:block}
+    .section{
+      margin-top:18px;
+      display:grid; grid-template-columns: repeat(3, 1fr); gap:14px;
+    }
+    @media (max-width: 900px){ .section{grid-template-columns:1fr} }
+    .mini h3{margin:0 0 6px; font-size:18px}
+    .mini p{margin:0; color:var(--muted); line-height:1.5}
+    footer{margin-top:26px; color:rgba(255,255,255,.62); font-size:13px}
+    .link{color:var(--accent); text-decoration:none; font-weight:800}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><span class="dot"></span> Srisoft Solutions</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="apps.html">Apps</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <section class="card">
+        <div class="pill">Now Featuring: <b>ICT Quiz App</b></div>
+        <h1>Educational & Business<br/>Software Solutions</h1>
+        <div class="tag">
+          We build practical apps for learning and productivity — starting with exam-ready tools for Sri Lankan students.
+        </div>
+
+        <div class="ctaRow">
+          <a class="btn btnPrimary" href="apps.html">View ICT Quiz App</a>
+          <a class="btn btnGhost" href="support.html">Contact Support</a>
+          <a class="btn btnGhost" href="privacy.html">Privacy Policy</a>
+        </div>
+
+        <div class="section">
+          <div class="card mini" style="padding:16px">
+            <h3>Timed Practice</h3>
+            <p>Real exam-style model papers with a clean timer & navigation.</p>
+          </div>
+          <div class="card mini" style="padding:16px">
+            <h3>Instant Results</h3>
+            <p>Score summary + review your answers with clear feedback.</p>
+          </div>
+          <div class="card mini" style="padding:16px">
+            <h3>Built for O/L ICT</h3>
+            <p>Focused on G.C.E. O/L ICT exam preparation.</p>
+          </div>
+        </div>
+      </section>
+
+      <aside class="card">
+        <div class="shots">
+          <div class="shot">
+            <img src="assets/images/test.jpg" alt="ICT Quiz App - Results screen screenshot">
+          </div>
+          <div class="shot">
+            <img src="assets/images/score.jpg" alt="ICT Quiz App - Exam screen screenshot">
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      © <span id="y"></span> Srisoft Solutions • Support: <a class="link" href="mailto:srisoft.apps@gmail.com">srisoft.apps@gmail.com</a>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

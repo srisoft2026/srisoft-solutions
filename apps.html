@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apps • Srisoft Solutions</title>
+  <style>
+    :root{--bg1:#0b2a63;--bg2:#0f4aa8;--text:#eef3ff;--muted:#b8c7ff;--accent:#f6c247;--line:rgba(255,255,255,.12)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);
+      background:linear-gradient(135deg,var(--bg1),var(--bg2));min-height:100vh}
+    .wrap{max-width:1100px;margin:0 auto;padding:22px 18px 48px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:10px 0 22px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px}
+    .dot{width:10px;height:10px;border-radius:999px;background:var(--accent)}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-weight:700;padding:10px 10px;border-radius:12px}
+    nav a:hover{background:rgba(255,255,255,.06);color:var(--text)}
+    .card{background:rgba(11,22,48,.72);border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 18px 50px rgba(0,0,0,.25)}
+    h1{margin:0 0 12px;font-size:34px}
+    .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:14px;align-items:stretch}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+    .shots{display:flex;gap:12px;justify-content:center;align-items:center}
+    .shot{width:48%;border-radius:18px;border:1px solid var(--line);overflow:hidden;background:#0b1630}
+    .shot img{width:100%;display:block}
+    .badges{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}
+    .badge{background:rgba(255,255,255,.08);border:1px solid var(--line);color:var(--muted);padding:8px 12px;border-radius:999px;font-weight:800}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border-radius:14px;font-weight:900;text-decoration:none;border:1px solid var(--line);color:var(--text);background:rgba(255,255,255,.06)}
+    .btn:hover{filter:brightness(1.06)}
+    .note{color:var(--muted);line-height:1.6}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><span class="dot"></span> Srisoft Solutions</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="apps.html">Apps</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <div class="card">
+      <h1>Our Apps</h1>
+      <div class="grid">
+        <div class="card" style="margin:0">
+          <h2 style="margin:0 0 8px">ICT Quiz App</h2>
+          <div class="note">
+            Exam-focused practice app for <b>G.C.E. O/L ICT</b> students — model papers, timed exams, and instant results.
+          </div>
+
+          <div class="badges">
+            <div class="badge">Timed Exams</div>
+            <div class="badge">Instant Results</div>
+            <div class="badge">Review Answers</div>
+          </div>
+
+          <a class="btn" href="support.html">Need help? Contact Support</a>
+
+          <p class="note" style="margin-top:12px">
+            Google Play link can be added here after production release.
+          </p>
+        </div>
+
+        <div class="card" style="margin:0">
+          <div class="shots">
+            <div class="shot"><img src="assets/images/ict_quiz_2.jpg" alt="Exam screenshot"></div>
+            <div class="shot"><img src="assets/images/ict_quiz_1.jpg" alt="Results screenshot"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
